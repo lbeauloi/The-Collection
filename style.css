@@ -1,0 +1,24 @@
+* {
+  text-align: center;
+}
+
+.carte {
+  height: 600px;
+  width: 300px;
+  border: 1px solid black;
+  margin: 15px;
+  background-color: bisque;
+}
+
+.illustrationCarte {
+  width: 250px;
+  height: 250px;
+}
+
+.boutonSpotify {
+  text-decoration: none;
+  background-color: #23CF5F;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
