@@ -1,18 +1,29 @@
 * {
   text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 .carte {
-  height: 600px;
-  width: 300px;
-  border: 1px solid black;
+  height: 80vh;
+  width: 80vw;
   margin: 15px;
-  background-color: bisque;
+  background-color: #006B4A;
+  border-radius: 25px;
 }
 
 .illustrationCarte {
   width: 250px;
   height: 250px;
+  border-radius: 25px;
+}
+
+.titreCarte {
+  padding: 20px;
+}
+
+.pGauche, .pDroite {
+  padding: 0px 10px;
 }
 
 .boutonSpotify {
@@ -20,5 +31,4 @@
   background-color: #23CF5F;
   padding: 10px;
   border-radius: 20px;
-  color: white;
 }/*# sourceMappingURL=style.css.map */

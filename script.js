@@ -53,7 +53,7 @@ const Musique = [
   {
     name: "Sébastien Tellier",
     style: "Electro/Nu-Disco",
-    picture: "",
+    picture: "assets/image/Sébastien Tellier.jpg",
     creationYear: "2019",
     mostKnownTitle: "La ritournelle",
     persoFavTitle: "Universe",
@@ -65,7 +65,7 @@ const Musique = [
   {
     name: "Cypress Hill",
     style: "Rap",
-    picture: "",
+    picture: "assets/image/Cypress Hill.jpg",
     creationYear: "1986",
     mostKnownTitle: "Insane in the Brain",
     persoFavTitle: "Tequilla Sunrise",
@@ -77,7 +77,7 @@ const Musique = [
   {
     name: "Red Hot Chili Peppers",
     style: "Rock/Rap-Rock/Punk-Rock",
-    picture: "",
+    picture: "assets/image/RedHot.jpg",
     creationYear: "1982",
     mostKnownTitle: "Under the Bridge",
     persoFavTitle: "Scar Tissue",
@@ -102,7 +102,7 @@ const Musique = [
   {
     name: "Buena Vista Social Club",
     style: "Son cubain/Boléro",
-    picture: "",
+    picture: "assets/image/BuenaVitaSocialClub.jpg",
     creationYear: "1996",
     mostKnownTitle: "Chan Chan",
     persoFavTitle: "Chan Chan",
@@ -114,7 +114,7 @@ const Musique = [
   {
     name: "KALEO",
     style: "Indie pop/Alternatif",
-    picture: "",
+    picture: "assets/image/KALEO.jpg",
     creationYear: "2012",
     mostKnownTitle: "Way down We Go",
     persoFavTitle: "Vor í Vaglaskógi",
