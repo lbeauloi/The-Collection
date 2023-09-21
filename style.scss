@@ -3,29 +3,47 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
+h1{
+    padding: 50px;
+}
 
+#body{
+    background: #181818;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
+    max-width: 1350px;
+    margin: auto;
 }
 .carte{
     height: 740px;
-    width: 300px;
+    width: 430px;
     margin: 15px;
     background: rgb(0,107,74);
     background: radial-gradient(circle, rgba(0,107,74,1) 0%, rgba(0,86,60,1) 50%, rgba(0,0,0,1) 100%); 
     border-radius: 25px;
     margin: 10px auto;
+    position: relative;
+}
+
+.divInformation{
+    position: relative;
+    top: 300px;
 }
 
 .illustrationCarte{
     width: 250px;
     height: 250px;
     border-radius: 25px;
+    position: absolute;
+    top: 125px;
+    transform: translateX(-50%);
 }
 
 .titreCarte{
     padding: 20px;
+    
 }
 
 .info{
@@ -37,6 +55,22 @@
     padding: 10px;
     border-radius: 20px;
     display: inline-block;
-    margin: 25px;
+    position: absolute;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: 180px;
+    .imageDuBouton{
+        width: 20px;
+        height: 20px;
+        float: left;
+    }
+    &:hover{
+        bottom: 40px;
+        transform: translateX(-50%) scale(1.1);
+        transition-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+    }
 }
+
+
 

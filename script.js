@@ -10,6 +10,8 @@ const Musique = [
     listenersPerMonth: "13.398.011",
     country: "Angleterre",
     écouter: "https://open.spotify.com/intl-fr/artist/12Chz98pHFMPJEknJQMWvI",
+    audio:"assets/audio/muse.mp3",
+
   },
 
   {
@@ -128,12 +130,12 @@ const Musique = [
 let newSection = document.createElement("section");
 newSection.classList.add("container"); // ajout d'une classe "container" à notre section
 
-
 // Parcoure le tableau Musique
 Musique.forEach(function (music) {
   // Crée une div pour chaque carte
   let divCarte = document.createElement("div");
   divCarte.classList.add("carte"); //ajout d'une classe sur la div de la carte
+  
 
   // Crée et ajoute un titre h2 pour le nom de l'artiste
   let nameCarte = document.createElement("h2");
@@ -167,9 +169,10 @@ Musique.forEach(function (music) {
 
   // Crée et ajoute un paragraphe pour le titre favori personnel
   let persoFavTitle = document.createElement("p");
-  persoFavTitle.textContent = "Titre favori personnel: " + music.persoFavTitle;
+  persoFavTitle.textContent = "Titre favori: " + music.persoFavTitle;
   persoFavTitle.classList.add("info"); // ajout d'une classe sur le p
   divCarte.appendChild(persoFavTitle);
+  
 
   // Crée et ajoute un paragraphe pour les auditeurs par mois
   let listenersPerMonth = document.createElement("p");
@@ -184,19 +187,34 @@ Musique.forEach(function (music) {
   pays.classList.add("info"); //ajout d'une classe sur le p
   divCarte.appendChild(pays);
 
-  //création et ajout d'un bouton pour écouter
+  //creation d'une classe pour regrouper toute les infos (style, année, connu, persopref, audit, pays)
+  let divInfos = document.createElement("div");
+  divInfos.classList.add("divInformation");
+  divInfos.appendChild(styleCarte);
+  divInfos.appendChild(creationYear);
+  divInfos.appendChild(mostKnownTitle);
+  divInfos.appendChild(persoFavTitle);
+  divInfos.appendChild(listenersPerMonth);
+  divInfos.appendChild(pays);
+
+  //ajout de la divInformation à notre section carte
+  divCarte.appendChild(divInfos);
+
+  //création et ajout d'un bouton pour écouter sur spotify
   let button = document.createElement("a");
   let link = document.createTextNode("Ecouter sur Spotify");
+  let imageButton = document.createElement("img");
+  imageButton.setAttribute("src", "assets/image/spotify.png"); //ajout de l'attribut source
+  button.setAttribute("target", "_blank"); //ajout d'un attribut pour ouvrir dans un nouveau onglet
   button.classList.add("boutonSpotify"); // ajout d'une classe sur le bouton
+  imageButton.classList.add("imageDuBouton"); //ajout d'une classe pour l'image du bouton
   button.appendChild(link);
+  button.appendChild(imageButton);
   divCarte.appendChild(button);
-  button.title = "Ecouter sur Spotify";
+  button.title ="Ecouter sur Spotify" + imageButton ;
   button.href = music.écouter;
 
   // Ajoute la carte (div) à la nouvelle section
   newSection.appendChild(divCarte);
   document.body.appendChild(newSection);
-
 });
-
-
