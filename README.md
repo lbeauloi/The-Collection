@@ -9,6 +9,6 @@ The goal of this project will be to summarize our current knowledge of :
 - The DOM
 
 to create a collection of items.
-This project will be split up in two parts.
+
 
 ---
