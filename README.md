@@ -18,9 +18,9 @@ to create a collection of items.
 
 ---
 ### Used languages
--HTML
--CSS
--JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ---
 ### Final Project Link
