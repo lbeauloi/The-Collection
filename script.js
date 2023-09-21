@@ -124,6 +124,30 @@ const Musique = [
     country: "Islande",
     écouter: "https://open.spotify.com/intl-fr/artist/7jdFEYD2LTYjfwxOdlVjmc",
   },
+
+  {
+    name: "Vladimir Cauchemar",
+    style:"EDM/Electro",
+    picture:"assets/image/vladimir.jpg",
+    creationYear: "2017",
+    mostKnownTitle:"Aulos",
+    persoFavTitle:"Sonata N°1",
+    listenersPerMonth:"965.704",
+    country:"France",
+    écouter:"https://open.spotify.com/intl-fr/artist/2V5xArcB3BGAHmwsK46tyU",
+  },
+
+  {
+    name: "Ozark Henry",
+    style:"Pop",
+    picture:"assets/image/ozark.jpg",
+    creationYear: "1995",
+    mostKnownTitle:"I'm Your Sacrifice",
+    persoFavTitle:"Le Temps qui Reste",
+    listenersPerMonth:"74.424",
+    country:"Belgique",
+    écouter:"https://open.spotify.com/intl-fr/artist/3a9AG5fMqAqrXkeiwYtarJ",
+  },
 ];
 
 // Crée la nouvelle section
@@ -157,7 +181,7 @@ Musique.forEach(function (music) {
 
   // Crée et ajoute un paragraphe pour l'année de création
   let creationYear = document.createElement("p");
-  creationYear.textContent = "Année de création: " + music.creationYear;
+  creationYear.textContent = "En activité depuis: " + music.creationYear;
   creationYear.classList.add("info"); // ajout d'une classe sur le p
   divCarte.appendChild(creationYear);
 
