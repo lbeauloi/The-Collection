@@ -54,7 +54,7 @@ const Musique = [
     name: "Sébastien Tellier",
     style: "Electro/Nu-Disco",
     picture: "assets/image/Sébastien Tellier.jpg",
-    creationYear: "2019",
+    creationYear: "2001",
     mostKnownTitle: "La ritournelle",
     persoFavTitle: "Universe",
     listenersPerMonth: "570.007",
@@ -126,6 +126,8 @@ const Musique = [
 
 // Crée la nouvelle section
 let newSection = document.createElement("section");
+newSection.classList.add("container"); // ajout d'une classe "container" à notre section
+
 
 // Parcoure le tableau Musique
 Musique.forEach(function (music) {
@@ -148,44 +150,44 @@ Musique.forEach(function (music) {
   // Crée et ajoute un paragraphe pour le style musical
   let styleCarte = document.createElement("p");
   styleCarte.textContent = "Style: " + music.style;
-  styleCarte.classList.add("pGauche"); // ajout d'une classe sur le p
+  styleCarte.classList.add("info"); // ajout d'une classe sur le p
   divCarte.appendChild(styleCarte);
 
   // Crée et ajoute un paragraphe pour l'année de création
   let creationYear = document.createElement("p");
   creationYear.textContent = "Année de création: " + music.creationYear;
-  creationYear.classList.add("pGauche"); // ajout d'une classe sur le p
+  creationYear.classList.add("info"); // ajout d'une classe sur le p
   divCarte.appendChild(creationYear);
 
   // Crée et ajoute un paragraphe pour le titre le plus connu
   let mostKnownTitle = document.createElement("p");
   mostKnownTitle.textContent = "Titre le plus connu: " + music.mostKnownTitle;
-  mostKnownTitle.classList.add("pGauche"); // ajout d'une classe sur le p
+  mostKnownTitle.classList.add("info"); // ajout d'une classe sur le p
   divCarte.appendChild(mostKnownTitle);
 
   // Crée et ajoute un paragraphe pour le titre favori personnel
   let persoFavTitle = document.createElement("p");
   persoFavTitle.textContent = "Titre favori personnel: " + music.persoFavTitle;
-  persoFavTitle.classList.add("pDroite"); // ajout d'une classe sur le p
+  persoFavTitle.classList.add("info"); // ajout d'une classe sur le p
   divCarte.appendChild(persoFavTitle);
 
   // Crée et ajoute un paragraphe pour les auditeurs par mois
   let listenersPerMonth = document.createElement("p");
   listenersPerMonth.textContent =
     "Auditeurs par mois: " + music.listenersPerMonth;
-  listenersPerMonth.classList.add("pDroite"); //ajout d'une classe sur le p
+  listenersPerMonth.classList.add("info"); //ajout d'une classe sur le p
   divCarte.appendChild(listenersPerMonth);
 
   // Crée et ajoute un paragraphe pour le pays d'origine
   let pays = document.createElement("p");
   pays.textContent = "Pays d'origine: " + music.country;
-  pays.classList.add("pDroite"); //ajout d'une classe sur le p
+  pays.classList.add("info"); //ajout d'une classe sur le p
   divCarte.appendChild(pays);
 
   //création et ajout d'un bouton pour écouter
   let button = document.createElement("a");
   let link = document.createTextNode("Ecouter sur Spotify");
-  button.classList.add("boutonSpotify"); // ajout d'une classe sur le bouton 
+  button.classList.add("boutonSpotify"); // ajout d'une classe sur le bouton
   button.appendChild(link);
   divCarte.appendChild(button);
   button.title = "Ecouter sur Spotify";
@@ -194,4 +196,7 @@ Musique.forEach(function (music) {
   // Ajoute la carte (div) à la nouvelle section
   newSection.appendChild(divCarte);
   document.body.appendChild(newSection);
+
 });
+
+

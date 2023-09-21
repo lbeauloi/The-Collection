@@ -4,12 +4,19 @@
   color: white;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .carte {
-  height: 80vh;
-  width: 80vw;
+  height: 740px;
+  width: 300px;
   margin: 15px;
-  background-color: #006B4A;
+  background: rgb(0, 107, 74);
+  background: radial-gradient(circle, rgb(0, 107, 74) 0%, rgb(0, 86, 60) 50%, rgb(0, 0, 0) 100%);
   border-radius: 25px;
+  margin: 10px auto;
 }
 
 .illustrationCarte {
@@ -22,7 +29,7 @@
   padding: 20px;
 }
 
-.pGauche, .pDroite {
+.info {
   padding: 0px 10px;
 }
 
@@ -31,4 +38,6 @@
   background-color: #23CF5F;
   padding: 10px;
   border-radius: 20px;
+  display: inline-block;
+  margin: 25px;
 }/*# sourceMappingURL=style.css.map */

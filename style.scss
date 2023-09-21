@@ -3,12 +3,19 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
 .carte{
-    height: 80vh;
-    width: 80vw;
+    height: 740px;
+    width: 300px;
     margin: 15px;
-    background-color: #006B4A;
+    background: rgb(0,107,74);
+    background: radial-gradient(circle, rgba(0,107,74,1) 0%, rgba(0,86,60,1) 50%, rgba(0,0,0,1) 100%); 
     border-radius: 25px;
+    margin: 10px auto;
 }
 
 .illustrationCarte{
@@ -21,7 +28,7 @@
     padding: 20px;
 }
 
-.pGauche, .pDroite{
+.info{
     padding: 0px 10px;
 }
 .boutonSpotify{
@@ -29,4 +36,7 @@
     background-color: #23CF5F;
     padding: 10px;
     border-radius: 20px;
+    display: inline-block;
+    margin: 25px;
 }
+
