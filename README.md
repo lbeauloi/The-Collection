@@ -22,7 +22,7 @@ to create a collection of items.
 
 ## Screenshots
 
-![](/assets/image/Collection.PNG.PNG)
+![](/assets/image/Collection.PNG)
 
 
 
